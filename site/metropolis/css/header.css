@@ -1,0 +1,140 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    color: black;
+  }
+
+  
+  header {
+    display: flex;
+    z-index: 10;
+  }
+  
+  header ul {
+    text-align: center;
+    word-spacing: 100px;
+  }
+  
+  header > nav {
+    height: 60px;
+    width: 100%;
+    font-family: 'Arvo';
+    background-color: rgb(218, 219, 167);
+    text-transform: uppercase;
+  }
+  
+  .blue {
+    height: 60px;
+    width: 100%;
+    font-family: 'Arvo';
+    background-color: #303030;
+    text-transform: uppercase;
+    position: fixed;
+  }
+  
+  #logo {
+      width: 3.5em;
+      padding-top: 2px;
+  }
+  
+  .menu {
+      font-size: 1.5em;
+  }
+  
+  header > nav > ul > li{
+      display: inline-block;
+      vertical-align: middle;
+  }
+  
+  nav > ul > li > a {
+    padding-top: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav > ul > li > a:hover {
+    color: rgb(0, 110, 255);
+  }
+
+  @media all and (max-width:850px) {
+
+    header > nav {
+      height: 4em;
+    }
+  
+    #logo {
+        width: 4em;
+        padding-top: 2px;
+    }
+  
+    .menu {
+        font-size: 1em;
+    }
+  
+    header ul {
+      text-align: center;
+      word-spacing: 30px;
+    }
+  
+    nav > ul > li > a {
+      padding-top: 10px;
+      font-size: 10px;
+    }
+  
+  }
+
+  @media all and (max-width:550px) {
+
+    header > nav {
+      height: 35px;
+    }
+  
+    #logo {
+        width: 3.1em;
+        padding-top: 2px;
+    }
+  
+    .menu {
+        font-size: 1em;
+    }
+  
+    header ul {
+      text-align: center;
+      word-spacing: 30px;
+    }
+  
+    nav > ul > li > a {
+      padding-top: 10px;
+      font-size: 10px;
+    }
+  
+  }
+
+  @media all and (max-width:300px) {
+
+    header > nav {
+      height: 3.1em;
+    }
+  
+    #logo {
+        width: 3em;
+        padding-top: 2px;
+    }
+  
+    .menu {
+        font-size: 0.7em;
+    }
+  
+    header ul {
+      text-align: center;
+      word-spacing: 5px;
+    }
+  
+    nav > ul > li > a {
+      padding-top: 10px;
+      font-size: 1em;
+    }
+  
+  }
+  

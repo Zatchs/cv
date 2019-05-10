@@ -1,0 +1,273 @@
+/*********/
+/* MEDIA */
+/*********/
+
+@font-face{
+  font-family: "Angry-Birds";
+  src: url("Angry-Birds.ttf");
+  font-weight: bold;
+}
+
+@media (max-width: 1600px) {
+  html { font-size: 1em!important; }
+  }
+
+@media (max-width: 1024px) {
+  html { font-size: 0.9em!important; }
+  }
+  
+@media (max-width: 980px) {
+  html { font-size: 0.8em!important; }
+  }
+  @media (max-width: 800px) {
+    html { font-size: 0.7em!important; }
+    }
+    
+  @media (max-width: 400px) {
+    html { font-size: 0.4em!important; }
+    }
+
+
+/*******/
+/* DOM */
+/*******/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+
+html,
+body {
+  position: relative;
+  background-color: #4F5858;
+  color: #FFF;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  background: url("img/belette.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+h3, h2, h1{
+  font-family: 'Carter One', cursive;
+}
+h4{
+  font-weight: 700;
+}
+
+.logo{
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.container-fluid{
+z-index: 2;
+}
+.container{
+  width: 100%;
+  z-index: 20;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+a:hover {
+  color: #FFF;
+}
+
+
+
+h1 {
+  color: white; text-shadow: black 0.2em 0.2em 0.3em;
+  font-size: 90px;
+  letter-spacing: 6px;
+  text-align: center;
+  line-height: calc(80vh - 190px);
+  font-family: 'Angry-Birds';
+  z-index: -2;
+}
+
+h2 {
+  color: rgb(0, 0, 0); text-shadow: rgb(51, 51, 51) 0.2em 0.2em 0.3em;
+  font-size: 70px;
+  letter-spacing: 6px;
+  text-align: center;
+  line-height: calc(30vh - 100%);
+  font-family: 'Angry-Birds';
+}
+
+h3 {
+  font-size: 3em;
+  color: white; text-shadow: black 0.2em 0.2em 0.3em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  text-align: center;
+  line-height: calc(10vh - 90px);
+  text-decoration: underline;
+}
+
+p {
+  font-family: 'Angry-Birds';
+  font-size: 2em;
+}
+
+
+/**************/
+/*   ENTETE   */
+/**************/
+.header-row {
+  position: relative;
+  min-height: calc(100vh - 65px);
+  margin-top: 65px;
+  padding: 5px;
+  text-align: center;
+}
+
+
+
+/**************/
+/*  ASSURANCE */
+/**************/
+
+.assurance p {
+  font-size: 1.2em;
+  color: firebrick;
+  font-weight: 600;
+}
+#photo {
+  justify-content: space-around;
+  display:row;
+  flex-wrap: wrap;
+	border-style: solid;
+	border-color: grey;
+	width:250px;
+  height:150px;
+  margin-bottom: 15px;
+}
+.assurance-row {
+  background-color: #FFF;
+  color: black;
+  padding: 15 15px 45px 15px;
+  margin: 0;
+  padding: 0;
+  background: white;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+}
+
+
+#photo{
+  opacity:0.8;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  max-width:auto;
+  max-height: auto;
+  text-align: center;
+}
+
+#photo:hover{
+  opacity: 1;
+  transform: scale(1.2);
+}
+#textea {
+  font-size: 1.5em;
+  height: auto;
+  width: auto;
+}
+
+
+
+/**************/
+/*    OFFRE   */
+/**************/
+
+.offre {
+  color: #FFF;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1em;
+  left: -50px;
+
+  width: 98%;
+  height:0;
+
+}
+.offre-container{
+
+  height: 400px;
+  background: url("img/alcool.png") no-repeat fixed center;
+  background-size: cover;
+  width: 100%;
+}
+
+.biere {
+  background-color: goldenrod;
+  text-align: center;
+  font-size: 1.2em;  
+}
+
+.ethylotest {
+  background-color: limegreen;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#image-offre {
+  text-shadow: black 0.8em 0.4em 0.4em;
+  margin-top: 500px;
+  margin-bottom: 150px;
+  font-family: 'Angry-Birds'; 
+  font-size: 70px;
+  letter-spacing: 6px;
+  width: 100%;
+  height: 50px;
+  line-height: 30px;
+}
+
+
+#titre_offre {
+  color: firebrick;
+  font-size: 2.5em;
+  text-align: left;
+  font-weight: 600;
+}
+
+#argent {
+  font-size: 6em;
+  text-align: center;
+  color: white;
+}
+
+#argent:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+#fin_offre {
+  font-size: 3em;
+  text-align: right;
+  color: firebrick;
+}
+a:link{
+  margin: 10px;
+  text-decoration: none;
+}
+.scrollUp
+{
+position: fixed;
+bottom : 15px;
+right: 15px;
+opacity: 0.5;
+}
+
+
+@media screen and (max-width: 990px) {
+  .separation {
+    border-top: 1px solid #DDD;
+    margin-top: 20px;
+  }
+}

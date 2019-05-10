@@ -1,0 +1,340 @@
+/*********/
+/* MEDIA */
+/*********/
+
+@font-face{
+  font-family: "Angry-Birds";
+  src: url("Angry-Birds.ttf");
+  font-weight: bold;
+}
+
+@media (max-width: 1600px) {
+  html { font-size: 1em!important; }
+  }
+
+@media (max-width: 1024px) {
+  html { font-size: 0.9em!important; }
+  }
+  
+@media (max-width: 980px) {
+  html { font-size: 0.8em!important; }
+  }
+  @media (max-width: 800px) {
+    html { font-size: 0.7em!important; }
+    }
+    
+  @media (max-width: 400px) {
+    html { font-size: 0.4em!important; }
+    }
+
+
+/*******/
+/* DOM */
+/*******/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+
+html,
+body {
+  position: relative;
+  background-color: #4F5858;
+  color: #FFF;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  background: url("img/maison.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+h3, h2, h1{
+  font-family: 'Carter One', cursive;
+}
+h4{
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.titre{
+  margin-top: 200px;
+}
+
+.logo{
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.container-fluid{
+z-index: 2;
+}
+.container{
+  width: 100%;
+  z-index: 20;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+a:hover {
+  color: #FFF;
+}
+
+
+
+h1 {
+  color: white; text-shadow: black 0.2em 0.2em 0.3em;
+  margin-top: 20px;
+  font-size: 130px;
+  letter-spacing: 6px;
+  text-align: center;
+  font-family: 'Angry-Birds';
+  z-index: -2;
+}
+
+h2 {
+  color: rgb(0, 0, 0); text-shadow: rgb(51, 51, 51) 0.2em 0.2em 0.3em;
+  font-size: 70px;
+  letter-spacing: 6px;
+  text-align: center;
+  line-height: calc(30vh - 100%);
+  font-family: 'Angry-Birds';
+}
+
+h3 {
+  font-size: 2em;
+  color: white; text-shadow: black 0.2em 0.2em 0.3em;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-align: center;
+  line-height: calc(20vh - 90px);
+  text-decoration: underline;
+}
+
+p {
+  font-family: 'Angry-Birds';
+  font-size: 2em;
+}
+
+
+/**************/
+/*   ENTETE   */
+/**************/
+.header-row {
+  position: relative;
+  min-height: calc(100vh - 65px);
+  margin-top: 45px;
+  padding: 5px;
+  text-align: center;
+}
+
+
+
+/**************/
+/*  ASSURANCE */
+/**************/
+
+.assurance p {
+  font-size: 1.2em;
+  color: firebrick;
+  font-weight: 600;
+}
+#photo {
+	max-width:100%;
+  height:auto;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  text-align: center;
+}
+
+.assurance img{
+  display:block;
+  width: 100%;
+  height: 100%;
+}
+
+.assurance-row {
+  min-height: calc(100vh - 65px);
+  background-color: #FFF;
+  color: black;
+  padding: 15 15px 45px 15px;
+  margin: 0;
+  padding: 0;
+  background: white;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+}
+
+.promo-row{
+  padding-top: 80px;
+}
+
+
+#photo:hover{
+  opacity: 1;
+  transform: scale(1.2);
+}
+#textea {
+  font-size: 1.5em;
+  height: auto;
+  width: auto;
+  text-align: center;
+  margin-top: 5px;
+  color: firebrick;
+}
+
+
+
+/**************/
+/*    OFFRE   */
+/**************/
+
+.offre {
+
+  color: #FFF;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1em;
+
+  width: 98%;
+  height:100;
+
+}
+.offre-container{
+  background: url("img/voiture.jpg") no-repeat fixed center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.biere {
+  background-color: goldenrod;
+  text-align: center;
+  font-size: 1.2em;  
+}
+
+.ethylotest {
+  background-color: limegreen;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#image-offre {
+  text-shadow:black 0.8em 0.4em 0.4em;
+  color: white;
+
+  font-family: 'Angry-Birds'; 
+  font-size: 70px;
+  vertical-align: middle;
+  letter-spacing: 6px;
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+}
+
+#titre_offre {
+  color: firebrick;
+  font-size: 2.5em;
+  text-align: left;
+  font-weight: 600;
+}
+
+#argent {
+  font-size: 6em;
+  text-align: center;
+  color: white;
+}
+
+#argent:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+#fin_offre {
+  font-size: 3em;
+  text-align: right;
+  color: firebrick;
+}
+a:link{
+  margin: 10px;
+  text-decoration: none;
+}
+
+.scrollUp
+{
+position: fixed;
+bottom : 15px;
+right: 15px;
+opacity: 0.8;
+}
+
+#simplon{
+  height: 10%;
+  width: 100%;
+}
+
+
+.red {
+  font-size: 50px;
+  color: 	#8B0000;
+  z-index: 400;
+}
+
+a#cRetour {
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  background: rgba(95, 0, 0, 0.6);
+  position: fixed;
+  right: 20px;
+  opacity: 1;
+  z-index: 99999;
+  transition: all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+a#cRetour:before {
+  content: "\25b2";
+}
+
+a#cRetour:hover {
+  background: rgba(0, 0, 0, 1);
+  transition: all ease-in 0.2s;
+}
+
+a#cRetour.cInvisible {
+  bottom: -35px;
+  opacity: 0;
+  transition: all ease-in 0.5s;
+}
+
+a#cRetour.cVisible {
+  bottom: 20px;
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 990px) {
+  .separation {
+    border-top: 1px solid #DDD;
+    margin-top: 20px;
+  }
+}
+
+#simplon2{
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: auto;
+  display:block;
+}

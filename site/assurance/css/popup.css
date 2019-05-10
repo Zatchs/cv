@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.button_container{
+    width: 100%;
+    text-align: center;
+    z-index: 400;
+}
+button{
+    height: 60px;
+}
+
+.container2{
+color: white;
+margin-left: auto;
+margin-right: auto;
+    width: 250px;
+}
+
+#button_modal {
+    margin-left: 30px;
+    height: 75px;
+    width: 20%;
+    background-color: #E53935;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid rgba(43, 0, 0, 0.233) 3px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.349);
+}
+
+#modal{
+    text-align: center;
+    z-index: 220;
+    height: 550px;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.699);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: -650px;
+    left: 35%;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+#close{
+    height: 50px;
+    width: 200px;
+    background-color: #E53935;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    border: solid rgba(43, 0, 0, 0.233) 3px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.349); 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+.mot{
+    text-align: center;
+    font-weight: 600;
+}
+
+input{
+    width: 200px;
+}
+
+textarea{
+    width: 200px;
+}

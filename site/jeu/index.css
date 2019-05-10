@@ -1,0 +1,205 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    background: #ffc600;
+    text-align: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+    cursor: url("images/marteau.png") 30 22, pointer;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 10rem;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.bro {
+    min-height: 200px;
+    text-align: center;
+}
+
+.score {
+    background: rgba(255,255,255,0.2);
+    padding: 0.3rem;
+    line-height: 1;
+    border-radius: 1rem;
+}
+
+.chrono {
+    background: rgba(255,255,255,0.2);
+    padding: 0.3rem;
+    line-height: 1;
+    border-radius: 1rem;
+    font-size : 3rem;
+}
+
+.button {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top : 50px;
+    margin-bottom : 20px;
+}
+
+.multiplicateur {
+    background: rgba(255,255,255,0.2);
+    padding: 0.3rem;
+    line-height: 1;
+    border-radius: 1rem;
+    font-size : 3rem;
+}
+
+.game {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.trou {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+    margin-top: 30px;
+}
+
+.trou:after {
+    display: block;
+    background: url("images/terre.jpg") bottom center no-repeat;
+    background-size: contain;
+    content:'';
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: 2;
+    bottom: -85px;
+    padding-top: 50px;
+}
+
+.trou.up .romain {
+    top: 0;
+}
+
+.romain {
+    background: url("images/Romain.png") bottom center no-repeat;
+    background-size: 80%;
+    position : absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+}
+
+.alex {
+    background: url("images/Alexandre.png") bottom center no-repeat;
+    background-size: 80%;
+    position : absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+}
+
+.benoit {
+    background: url("images/Benoit.png") bottom center no-repeat;
+    background-size: 80%;
+    position : absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+}
+
+img {
+    width : auto;
+    height : 200px;
+    position: relative;
+
+}
+
+.vide {
+    height: 50px;
+}
+
+@media (max-width:1400px) {
+    .button {
+        margin-top : 20px;
+        margin-bottom : 20px;
+    }
+
+    *:before, *:after {
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.7rem;
+    }
+
+    .score {
+        background: rgba(255,255,255,0.2);
+        padding: 0.3rem;
+        line-height: 1;
+        border-radius: 1rem;
+
+    }
+
+    .multiplicateur {
+        font-size : 2rem;
+    }
+
+    .chrono {
+        padding: 0.3rem;
+        font-size : 2rem;
+    }
+
+    .game {
+        width: 800px;
+        height: 300px;
+    }
+
+    .trou:after {
+        height: 50px;
+        z-index: 2;
+        bottom: -85px;
+        padding-top: 60px;
+        width: 100%;
+    }
+
+    .romain {
+        background-size: 43%;
+    }
+
+}

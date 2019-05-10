@@ -1,0 +1,37 @@
+/********************************* GENERAL **************************************/
+
+
+h2 {
+    padding-top: 3em;
+}
+
+.espace {
+    height: 3em;
+}
+
+
+/****************************** GESTION COMPTE **************************************/
+
+.titreG {
+    text-align: center;
+}
+
+/********************************* PARRALAXE **************************************/
+
+
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+}
+
+/********************************* PARRALAXE **************************************/
+.nom {
+    font-size: 2.5em;
+}
+.infos {
+    font-size: 1.5em;
+}
+.realisateur {
+    height: 500px;
+    width: auto;
+}

@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.espace {
+    height: 2em;
+}
+.imgFilm {
+    max-height: 400px;
+    width: auto;
+}
+
+.textFilm {
+    font-size: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+h2 {
+    font-size: 5em;
+}

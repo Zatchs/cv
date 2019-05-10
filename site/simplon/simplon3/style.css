@@ -1,0 +1,284 @@
+ @font-face{
+     font-family: "Angry-Birds";
+     src: url("Angry-Birds.ttf");
+     font-weight: bold;
+   }
+.grandlogo {
+    height: 50vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+.slogan1 {
+    height: 8vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.iconevideo {
+    height: 20vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+.paral {
+    min-height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.paral p {
+    font-size: 24px;
+    color: #f5f5f5;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+.paral h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 100px;
+}
+
+.paralsec {
+    background-image: url(img/ordinateur.png);
+}
+
+.page2rouge {
+    background-color: firebrick;
+}
+
+.page3moitie {
+    height: 50vh;
+}
+.tableau {
+    height: 52vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+
+}
+.programme {
+    border: solid black 3px;
+    height: 50vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    text-align: center;
+    background-image: url(img/actu.png)
+}
+
+.programme h2 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    text-align: center;
+    background: #212529;
+    color: white;
+    align-items: center;
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+    font-family: 'Angry-Birds';
+    opacity: 0.95;
+}
+
+.programme a {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50%;
+    text-align: center;
+    background-color: red;
+    color: white;
+    align-items: center;
+    position: relative;
+    top: 60%;
+    transform: translateY(-40%);
+}
+
+
+.candidater {
+    border: solid black 3px;
+    height: 50vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    text-align: center;
+    background-image: url(img/)
+}
+
+.candidater h2 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    text-align: center;
+    background: #212529;
+    color: white;
+    align-items: center;
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+    font-family: 'Angry-Birds';
+    opacity: 0.95;
+}
+
+.candidater a {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50%;
+    text-align: center;
+    background-color: red;
+    color: white;
+    align-items: center;
+    position: relative;
+    top: 60%;
+    transform: translateY(-40%);
+}
+
+.infos {
+    border: solid black 3px;
+    height: 50vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    text-align: center;
+    background-image: url(img/actu.png)
+}
+
+.infos h2 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    text-align: center;
+    background: #212529;
+    color: white;
+    align-items: center;
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+    font-family: 'Angry-Birds';
+    opacity: 0.95;
+}
+
+.infos a {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50%;
+    text-align: center;
+    background-color: red;
+    color: white;
+    align-items: center;
+    position: relative;
+    top: 60%;
+    transform: translateY(-40%);
+}
+
+.actualites {
+    height: 50vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    text-align: center;
+    background: #212529;
+    color: white;
+    align-items: center;
+    opacity: 0.95;
+}
+
+.actualites h1 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    text-align: center;
+    background: #212529;
+    color: white;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Angry-Birds';
+    font-size : 5em;
+}
+.actualites h1:hover
+ { text-decoration: underline; color:firebrick; }
+}
+
+.page4 {
+    height: 60vh;
+}
+
+.hommetriste {
+    height: 50vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+.nous {
+    height: 30vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.imageactu {
+    height: 30vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ml4 {
+  position: relative;
+  font-weight: 1000;
+  font-size: 2.5em;
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.display-3 h1{
+  font-weight: 500;
+  font-size: 1.5em;
+  font-family: 'Angry-Birds';
+}

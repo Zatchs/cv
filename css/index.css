@@ -1,0 +1,775 @@
+/************/
+/** GENERAL */
+/************/
+@font-face {
+    font-family: "Manga";
+    src: url("../Manga.otf");
+    font-weight: bold;
+}
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: white;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Arvo";
+}
+
+h2 {
+  margin-left: 50px;
+}
+
+h4 {
+  margin-left : 30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    margin-right: 20px
+}
+
+a:hover {
+    color: rgb(190, 243, 65);
+}
+
+p {
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.espace {
+  margin-top: 3em;
+}
+
+.espaceFort {
+  margin-top: 15em;
+}
+
+@media (max-width:992px) {
+    p {
+        font-size: 0.8em;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+li {
+    list-style-type: none;
+}
+
+/************/
+/** NAVBAR */
+/************/
+
+.navbar {
+    width: 100%;
+    height: 4em;
+    line-height: 4em;
+    background-color: black;
+    font-family: 'Manga';
+    font-size: 1.3em;
+
+}
+
+.onglet li {
+    display: inline-flex;
+    color: white;
+    min-width: 12em;
+}
+
+.important {
+  color: firebrick;
+}
+
+#site {
+  font-size: 2em;
+}
+
+@media (max-width:992px) {
+    .navbar {
+        width: auto;
+        height: 50px;
+        line-height: 50px;
+        font-size: 0.5em;
+        position: inline-block;
+    }
+}
+
+.images {
+  height: 20em;
+  width: auto;
+}
+
+
+/**********/
+/* PAGE 1 */
+/***********/
+
+#slider {
+    overflow: hidden;
+    height: 850px;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    85% {
+        left: -300%;
+    }
+
+    95% {
+        left: -400%;
+    }
+}
+
+#slider p {
+    color: whitesmoke;
+    font-size: 3.5em;
+    padding: 0.41em;
+    width: 600px;
+    background-color: firebrick;
+    opacity: 0.90;
+    top: 20%;
+    left: 30%;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    font-family: 'Manga';
+    border-radius: 20% 20% 50% 50%;
+}
+.pulse{
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width:992px) {
+    #slider {
+        overflow: hidden;
+        height: 300px;
+        width: auto;
+    }
+
+    #slider p {
+        color: whitesmoke;
+        font-size: 2em;
+        width: 200px;
+        background-color: firebrick;
+        margin-right: 50%;
+        margin-top: 10%;
+        top: 5%;
+        left: 40%;
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        font-family: 'manga';
+    }
+
+}
+
+
+/**********/
+/* PAGE 2 */
+/***********/
+
+.presentation {
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+}
+
+.p2img {
+    width: 30%;
+    float: left;
+    height: auto;
+    background: white;
+}
+
+.p2img img {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 100px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.p2texte {
+    width: 65%;
+    float: right;
+    height: auto;
+    font-size: 1.2em;
+    margin-top: -20px;
+}
+
+.p2texte p {
+    height: auto;
+    font-size: 0.8em;
+    margin-left: 1.8em;
+}
+
+@media (max-width:992px) {
+    .presentation {
+        width: 100%;
+        height: 500px;
+        margin-top: 0px;
+    }
+
+    .p2img img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0;
+    }
+    .p2texte {
+        width: 65%;
+        float: right;
+        height: auto;
+        font-size: 0.8em;
+    }
+}
+
+/**************/
+/* PARRALAXE*/
+/**************/
+
+
+.parallax-window {
+    min-height: 350px;
+    background: transparent;
+}
+
+/***********/
+/*  PAGE 3 */
+/***********/
+
+.presentation1 {
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.p3img {
+    width: 30%;
+    float: right;
+    height: auto;
+    background: white;
+}
+
+.p3img img {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 100px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+
+}
+
+.p3texte {
+    width: 65%;
+    float: left;
+    height: auto;
+    font-size: 1em;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+}
+
+
+@media (max-width:992px) {
+    .presentation1 {
+        width: 100%;
+        height: 350px;
+        margin-top: 0px;
+    }
+
+    .p3img img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+}
+
+.progress-circle {
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10rem;
+    margin: 4rem 2rem 0;
+    position: relative;
+    width: 10rem;
+  }
+  .progress-circle p {
+ 
+    position: absolute;
+    margin-top: -40%;
+
+  }
+  .progress-circle:before {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    content: attr(data-progress) '%';
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    position: absolute;
+    left: 0.7rem;
+    right: 0.7rem;
+    top: 0.7rem;
+    bottom: 0.7rem;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  }
+  .progress-circle:after {
+    background-color:firebrick;
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+  .progress-circle:hover:before,
+  .progress-circle:focus:before {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+
+  @media (max-width:992px) {
+    .progress-circle {
+        height: 5rem;
+        margin: 1rem 1rem 0;
+        position: relative;
+        width: 5rem;
+      }
+      .progress-circle p {
+     
+        margin-top: -40%;
+    
+      }
+      .progress-circle:before {
+        font-size: 0.7rem;
+        left: 0.7rem;
+        right: 0.7rem;
+        top: 0.7rem;
+        bottom: 0.7rem;
+      }
+      
+}
+
+/*****************/
+/* SOFT SKILLS **/
+/****************/
+
+.presentation2 {
+  height: 300px;
+}
+.p4texte {
+  width: 65%;
+  float:left;
+  height: auto;
+  font-size: 0.7em;
+  margin-left: 50px;
+}
+
+.p4img {
+  width: 30%;
+  float: right;
+  height: auto;
+  background: white;
+}
+
+.p4img img {
+  width: 100%;
+  max-width: 250px;
+  margin-left: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+@media (max-width:992px) {
+  .presentation2 {
+    height: 300px;
+  }
+  .p4texte {
+    width: 30%;
+    float:left;
+    height: auto;
+    font-size: 1em;
+    margin-left: 50px;
+  }
+  
+  .p4img {
+    margin-right: 200px;
+    margin-top: 20px;
+    width: 30%;
+  }
+  
+  .p4img img {
+    width: 100%;
+    max-width: 250px;
+    margin-left: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+    
+}
+
+
+  /**
+  * $step is set to 5 by default, meaning you can only use percentage classes in increments of five (e.g. 25, 30, 45, 50, and so on). This helps to reduce the size of the final CSS file. If you need a number that doesn't end in 0 or 5, you can change the text percentage while rounding the class up/down to the nearest 5.
+  */
+  .progress-circle[data-progress="0"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(90deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="1"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(93.6deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="2"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(97.2deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="3"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(100.8deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="4"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(104.4deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="5"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(108deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="6"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(111.6deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="7"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(115.2deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="8"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(118.8deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="9"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(122.4deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="10"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(126deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="11"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(129.6deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="12"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(133.2deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="13"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(136.8deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="14"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(140.4deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="15"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(144deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="16"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(147.6deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="17"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(151.2deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="18"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(154.8deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="19"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(158.4deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="20"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(162deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="21"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(165.60000000000002deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="22"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(169.2deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="23"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(172.8deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="24"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(176.4deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="25"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(180deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="26"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(183.60000000000002deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="27"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(187.2deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="28"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(190.8deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="29"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(194.4deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="30"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(198deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="31"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(201.60000000000002deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="32"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(205.2deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="33"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(208.8deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="34"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(212.4deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="35"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(216deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="36"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(219.6deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="37"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(223.20000000000002deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="38"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(226.8deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="39"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(230.4deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="40"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(234deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="41"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(237.6deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="42"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(241.20000000000002deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="43"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(244.8deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="44"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(248.4deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="45"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(252deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="46"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(255.6deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="47"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(259.20000000000005deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="48"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(262.8deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="49"]:after {
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(266.4deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="50"]:after {
+    background-image: linear-gradient(-90deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="51"]:after {
+    background-image: linear-gradient(-86.4deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="52"]:after {
+    background-image: linear-gradient(-82.8deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="53"]:after {
+    background-image: linear-gradient(-79.2deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="54"]:after {
+    background-image: linear-gradient(-75.6deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="55"]:after {
+    background-image: linear-gradient(-72deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="56"]:after {
+    background-image: linear-gradient(-68.4deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="57"]:after {
+    background-image: linear-gradient(-64.8deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="58"]:after {
+    background-image: linear-gradient(-61.2deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="59"]:after {
+    background-image: linear-gradient(-57.6deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="60"]:after {
+    background-image: linear-gradient(-54deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="61"]:after {
+    background-image: linear-gradient(-50.4deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="62"]:after {
+    background-image: linear-gradient(-46.8deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="63"]:after {
+    background-image: linear-gradient(-43.199999999999996deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="64"]:after {
+    background-image: linear-gradient(-39.6deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="65"]:after {
+    background-image: linear-gradient(-36deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="66"]:after {
+    background-image: linear-gradient(-32.4deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="67"]:after {
+    background-image: linear-gradient(-28.799999999999997deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="68"]:after {
+    background-image: linear-gradient(-25.200000000000003deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="69"]:after {
+    background-image: linear-gradient(-21.599999999999994deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="70"]:after {
+    background-image: linear-gradient(-18deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="71"]:after {
+    background-image: linear-gradient(-14.399999999999991deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="72"]:after {
+    background-image: linear-gradient(-10.799999999999997deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="73"]:after {
+    background-image: linear-gradient(-7.200000000000003deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="74"]:after {
+    background-image: linear-gradient(-3.599999999999994deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="75"]:after {
+    background-image: linear-gradient(0deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="76"]:after {
+    background-image: linear-gradient(3.600000000000009deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="77"]:after {
+    background-image: linear-gradient(7.200000000000003deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="78"]:after {
+    background-image: linear-gradient(10.799999999999997deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="79"]:after {
+    background-image: linear-gradient(14.400000000000006deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="80"]:after {
+    background-image: linear-gradient(18deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="81"]:after {
+    background-image: linear-gradient(21.60000000000001deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="82"]:after {
+    background-image: linear-gradient(25.200000000000003deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="83"]:after {
+    background-image: linear-gradient(28.799999999999997deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="84"]:after {
+    background-image: linear-gradient(32.400000000000006deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="85"]:after {
+    background-image: linear-gradient(36deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="86"]:after {
+    background-image: linear-gradient(39.599999999999994deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="87"]:after {
+    background-image: linear-gradient(43.20000000000002deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="88"]:after {
+    background-image: linear-gradient(46.80000000000001deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="89"]:after {
+    background-image: linear-gradient(50.400000000000006deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="90"]:after {
+    background-image: linear-gradient(54deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="91"]:after {
+    background-image: linear-gradient(57.599999999999994deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="92"]:after {
+    background-image: linear-gradient(61.20000000000002deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="93"]:after {
+    background-image: linear-gradient(64.80000000000001deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="94"]:after {
+    background-image: linear-gradient(68.4deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="95"]:after {
+    background-image: linear-gradient(72deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="96"]:after {
+    background-image: linear-gradient(75.6deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="97"]:after {
+    background-image: linear-gradient(79.20000000000002deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="98"]:after {
+    background-image: linear-gradient(82.80000000000001deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="99"]:after {
+    background-image: linear-gradient(86.4deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  .progress-circle[data-progress="100"]:after {
+    background-image: linear-gradient(90deg, firebrick 50%, transparent 50%, transparent), linear-gradient(270deg, firebrick 50%, #ddd 50%, #ddd);
+  }
+  
